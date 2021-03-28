@@ -5,20 +5,41 @@
 body{
     background-color: rgba(152, 70, 228, 0.924);
     font-family: sans-serif;
-    margin: 10px 30%;
+    margin-left: 36%;
     justify-content: center;
     color: rgb(235, 232, 232);
-    border: 1px solid rgb(216, 226, 222);
     padding: 10px;
 }
 fieldset{
     border: 0;
     margin: 10px 0;
 }
-input[type="text"], [type="email"]{
+
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0,5px;
+    display: block;
+
+}
+input[type="text"], [type="email"], .campo textarea, .campo select {
     border-radius: 5px;
-    box-shadow: 1px ;
+    box-shadow: 2px  2px 2px;
+    display: block;
 }
 input, textarea, select{
     border-radius: 5px;
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.form .nome{
+    float: left;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: rgb(202, 153, 204);
 }

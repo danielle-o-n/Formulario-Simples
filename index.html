@@ -11,21 +11,24 @@
     <h2>Cadastro de Devs.</h2>
     <p>Complete suas informações</p>
     <form>
-        <fieldset>
+        <fieldset class="grupo">
             <div class="form">
-                <label>Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <div>
-                <label>Sobrenome</label>
-                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                <div class="nome"> 
+                    <label>Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                </div>
+                <div class="campo">
+                    <label>Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
                 </div>
             </div>
         </fieldset>
-        <div>
+        <div class="campo">
             <label for="email">E-mail</label>
             <input type="email"> 
         </div>
-        <div>
+        <div class="campo">
+            <label for=""><strong>De qual lado da aplicação você é</strong></label>
             <label for=""><input type="radio" name="Stack" value="Front-End">Front-End</label>
             <label for=""><input type="radio" name="Stack">Back-End</label>
             <label for=""><input type="radio" name="Stack">Full-Stack</label>
@@ -37,8 +40,8 @@
             <option value="">pleno</option>
             <option value="">senior</option>
         </select>
-       <fieldset> 
-            <div>
+       <fieldset class="grupo"> 
+            <div class="checkboxx">
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">HTML</label>
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">CSS</label>
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">JavaScript</label>
@@ -46,8 +49,8 @@
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">ReactJs</label>
             </div>
         </fieldset>
-        <label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Suas paixoes e experiencias"></textarea>Conte um pouco sobre você</label>
-        <input type="submit" value="Enviar">
+        <label class="campo"><textarea name="" id="" cols="30" rows="10" placeholder="Suas paixoes e experiencias"></textarea>Conte um pouco sobre você</label>
+        <input type="submit" value="Enviar" class="botao">
     </form>
 </body>
 </html>
