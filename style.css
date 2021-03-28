@@ -2,38 +2,54 @@
     margin: 0;
     padding: 0;
 }
+#titulo{
+    margin-left: 7%;
+}
+#subtitulo{
+    margin-left: 10%;
+}
 body{
     background-color: rgba(152, 70, 228, 0.924);
     font-family: sans-serif;
-    margin-left: 36%;
+    font-size: 1em;
+    margin: 10px 0 10px 36%;
     justify-content: center;
     color: rgb(235, 232, 232);
-    padding: 10px;
+    padding-bottom: 5px;
 }
 fieldset{
     border: 0;
-    margin: 10px 0;
 }
 
 .campo{
     margin-bottom: 1em;
+
 }
 .campo label{
-    margin-bottom: 0,5px;
+    margin-bottom: 0.2em;
     display: block;
 
 }
-input[type="text"], [type="email"], .campo textarea, .campo select {
-    border-radius: 5px;
-    box-shadow: 2px  2px 2px;
+.campo input[type="text"], [type="email"], .campo textarea, .campo select {
+    padding: 0,2em;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px rgb(202, 153, 204);
     display: block;
 }
-input, textarea, select{
+
+.campo select option{
+    padding-right: 1em ;
+}
+input, textarea, select, button{
     border-radius: 5px;
+    font-size: 1em;
 }
 fieldset.grupo .campo{
     float: left;
     margin-right: 1em;
+}
+.grupo:before, .grupo:after {
+    display: table;
 }
 
 .form .nome{
@@ -41,5 +57,39 @@ fieldset.grupo .campo{
 }
 
 input:focus, textarea:focus, select:focus{
-    background-color: rgb(202, 153, 204);
+    background: rgb(202, 153, 204);
+}
+
+.botao{
+    font-size: 1.2em;
+    background: rgba(152, 70, 228, 0.924);
+    border: 0;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(152, 70, 228, 0.924);
+    text-shadow: 1px 1px 1px rgb(202, 153, 204);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px 0;
+}
+
+.botao:hover{
+    background: rgb(95, 23, 230);
+    box-shadow: white;
+    text-shadow: none;
+}
+
+.checkboxx{
+    display: grid;
+    margin-bottom: 5px;
+}
+#tecs{
+    margin: 5px 0;
+}
+.botao, select{
+    cursor: pointer;
+}
+textarea{
+    padding: 5px;
 }

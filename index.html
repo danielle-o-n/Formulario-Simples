@@ -8,33 +8,34 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h2>Cadastro de Devs.</h2>
-    <p>Complete suas informações</p>
+    <div>
+        <h1 id="titulo">Cadastro de Devs.</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
     <form>
         <fieldset class="grupo">
-            <div class="form">
-                <div class="nome"> 
-                    <label>Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                <div class="campo"> 
+                    <label><strong>Nome</strong></label>
+                    <input type="text" id="nome" name="nome"  required> 
                 </div>
                 <div class="campo">
-                    <label>Sobrenome</label>
-                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                    <label><strong>Sobrenome</strong></label>
+                    <input type="text" id="sobrenome" name="sobrenome"  required>
                 </div>
-            </div>
         </fieldset>
         <div class="campo">
-            <label for="email">E-mail</label>
-            <input type="email"> 
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" required> 
         </div>
         <div class="campo">
             <label for=""><strong>De qual lado da aplicação você é</strong></label>
-            <label for=""><input type="radio" name="Stack" value="Front-End">Front-End</label>
-            <label for=""><input type="radio" name="Stack">Back-End</label>
-            <label for=""><input type="radio" name="Stack">Full-Stack</label>
+            <label for=""><input type="radio" name="Stack" value="Front-End" checked >Front-End</label>
+            <label for=""><input type="radio" name="Stack" value="Back-End">Back-End</label>
+            <label for=""><input type="radio" name="Stack" value="Full-Stack">Full-Stack</label>
         </div>
-        <label for="senioridade">Selecione sua senioridade</label>
-        <select name="senioridade" id="">
+        <label for="senioridade"><strong>Selecione sua senioridade</strong></label>
+        <select name="senioridade" id="senioridade">
             <option disabled selected value="">selecione</option>
             <option value="">junior</option>
             <option value="">pleno</option>
@@ -42,15 +43,24 @@
         </select>
        <fieldset class="grupo"> 
             <div class="checkboxx">
+                <label id="tecs" for=""><strong>Selecione suas tecnologias</strong></label>
+                
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">HTML</label>
+                
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">CSS</label>
+                
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">JavaScript</label>
+                
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">Node.js</label>
+               
                 <label for=""><input type="checkbox" name="Stack" value="Front-End">ReactJs</label>
             </div>
         </fieldset>
-        <label class="campo"><textarea name="" id="" cols="30" rows="10" placeholder="Suas paixoes e experiencias"></textarea>Conte um pouco sobre você</label>
-        <input type="submit" value="Enviar" class="botao">
+        <div class="campo">
+            <label >Conte um pouco sobre você</label>
+            <textarea name="" id="" cols="30" rows="6" style="width: 26em;" placeholder="Suas paixões e experiências"></textarea>
+        </div>
+        <button class="botao" type="submit">Enviar</button>
     </form>
 </body>
 </html>
